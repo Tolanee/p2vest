@@ -59,7 +59,7 @@ export default function Wallet() {
               <Text
                 className="text-white text-3xl font-mono"
                 style={{fontFamily: 'Roboto-Bold'}}>
-                120,000
+                {'\u20A6'} 120,000
               </Text>
               <Text className="text-white text-sm">Balance</Text>
             </View>

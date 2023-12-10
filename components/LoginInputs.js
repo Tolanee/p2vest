@@ -1,4 +1,5 @@
 import {Button, Text, TextInput, TouchableOpacity, View} from 'react-native';
+import {Platform} from 'react-native';
 import {UserIcon, KeyIcon} from '../assets/svgs/LoginSvgs';
 import {ErrorMessage, Formik} from 'formik';
 import * as Yup from 'yup';
@@ -14,6 +15,8 @@ const verifyUserSchema = Yup.object({
 
 export default function LoginInputs() {
   const navigation = useNavigation();
+  const android = Platform.OS === 'android';
+  const ios = Platform.OS === 'ios';
   const submitHandler = async values => {
     navigation.navigate('Wallet');
   };
@@ -24,7 +27,10 @@ export default function LoginInputs() {
       onSubmit={submitHandler}>
       {({handleChange, handleBlur, handleSubmit, touched, values}) => (
         <View className="mx-10 ">
-          <View className="p-3 bg-white  flex flex-row space-x-2  rounded-lg items-center">
+          <View
+            className={`bg-white flex flex-row items-center rounded-lg mt-3 ${
+              ios ? 'p-3' : 'px-2'
+            } space-x-2`}>
             <UserIcon />
             <TextInput
               className="flex-1 flex-wrap"
@@ -49,7 +55,10 @@ export default function LoginInputs() {
               </Text>
             )}
           />
-          <View className="p-3 bg-white w-full flex flex-row items-center my-3 rounded-lg justify-between">
+          <View
+            className={`bg-white flex flex-row items-center rounded-lg my-3 ${
+              ios ? 'p-3' : 'px-2'
+            } space-x-2`}>
             <View className="flex flex-row space-x-2 items-center flex-1">
               <KeyIcon />
               <View className="flex-1">

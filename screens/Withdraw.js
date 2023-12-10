@@ -62,7 +62,7 @@ export default function Withdraw() {
           <Text
             style={{fontFamily: 'PTMono-Regular'}}
             className=" font-medium font-mono text-3xl">
-            N120,000
+            {'\u20A6'}120,000
           </Text>
         </View>
         <View className="mt-3">
