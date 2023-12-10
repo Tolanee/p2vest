@@ -56,7 +56,11 @@ export default function Wallet() {
         <View className="bg-[#1293A9] w-full h-40 mt-4 rounded-xl p-5 flex justify-between">
           <View className="flex flex-row justify-between  ">
             <View>
-              <Text className="text-white text-3xl font-mono">120,000</Text>
+              <Text
+                className="text-white text-3xl font-mono"
+                style={{fontFamily: 'Roboto-Bold'}}>
+                120,000
+              </Text>
               <Text className="text-white text-sm">Balance</Text>
             </View>
             <View>
@@ -66,7 +70,11 @@ export default function Wallet() {
           <View className="flex flex-row justify-between">
             <View>
               <Text className=" text-white text-[9px]">Account Number</Text>
-              <Text className="text-white text-sm">9102356712</Text>
+              <Text
+                className="text-white text-sm font-roboto-bold"
+                style={{fontFamily: 'PTMono-Regular'}}>
+                9102356712
+              </Text>
             </View>
             <View>
               <Text className="text-white text-[9px]">Bank</Text>

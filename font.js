@@ -4,7 +4,7 @@ const RobotoBold = require('./assets/fonts/Roboto/Roboto-Bold.ttf');
 const RobotoLight = require('./assets/fonts/Roboto/Roboto-Light.ttf');
 const RobotoMedium = require('./assets/fonts/Roboto/Roboto-Medium.ttf');
 const RobotoRegular = require('./assets/fonts/Roboto/Roboto-Regular.ttf');
-const Mono = require('./assets/fonts/Mono/PTMono-Regular.ttf');
+const Mono = require('./assets/fonts/PTMono-Regular.ttf');
 
 export const fonts = {
   Mono,

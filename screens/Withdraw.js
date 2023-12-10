@@ -59,13 +59,19 @@ export default function Withdraw() {
         </View>
         <View className="flex flex-row justify-between mt-3">
           <Text className="text-textGre font-medium text-lg">Your Balance</Text>
-          <Text className=" font-medium font-mono text-3xl">N120,000</Text>
+          <Text
+            style={{fontFamily: 'PTMono-Regular'}}
+            className=" font-medium font-mono text-3xl">
+            N120,000
+          </Text>
         </View>
         <View className="mt-3">
           <Text className="text-primary text-2xl font-bold">Withdraw</Text>
           <Text className="text-textGray font-medium text-lg">Amount</Text>
           <View className="w-full bg-softGreen p-4 flex items-center justify-center rounded-lg border-1 border-primary border">
-            <Text className="text-textGray font-medium font-mono text-lg">
+            <Text
+              className="text-textGray font-medium font-mono text-lg"
+              style={{fontFamily: 'PTMono-Regular'}}>
               20,000
             </Text>
           </View>
